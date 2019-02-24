@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HIFILTER]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E978-E325-11CE-BFC1-08002BE10318}]
+"UpperFilters"=hex(7):4c,4f,44,52,49,56,45,52,00,48,49,46,49,4c,54,45,52,00,00
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\System\HIFILTER]
+"EventMessageFile"="%SystemRoot%\\System32\\IOLOGMSG.DLL;%SystemRoot%\\System32\\Drivers\\HiFilter.SYS"
+"TypesSupported"=dword:00000007

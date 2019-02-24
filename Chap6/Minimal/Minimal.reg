@@ -1,0 +1,8 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Minimal]
+"Start"=dword:3
+"Type"=dword:1
+"ErrorControl"=dword:1
+"DisplayName"="Chapter 6 Minimal Driver"
+

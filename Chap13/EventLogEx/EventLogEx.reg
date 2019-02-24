@@ -1,0 +1,14 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EVENTLOGEX]
+"Start"=dword:3
+"Type"=dword:1
+"ErrorControl"=dword:1
+"DisplayName"="Chapter 13 Event Logging PnP Driver"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E978-E325-11CE-BFC1-08002BE10318}]
+"UpperFilters"="EVENTLOGEX"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\System\EVENTLOGEX]
+"EventMessageFile"="%SystemRoot%\\System32\\IOLOGMSG.DLL;%SystemRoot%\\System32\\Drivers\\EventLogEx.SYS"
+"TypesSupported"=dword:00000007

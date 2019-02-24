@@ -1,0 +1,31 @@
+[WMI, guid("295CF049-FE7C-4ce1-A178-737E55F6EDF9"),
+	Dynamic, Provider("WMIProv"),
+	WmiExpense(1),
+	Locale("MS\\0x409"),
+        Description("WMI Example class")]
+ 
+class W2KDriverBook_WMIEx {
+ 
+// Required item definitions - unused by driver
+    [key, read] string InstanceName;
+    [read] boolean Active;
+ 
+// Property:  Total Characters Transfered (R & W)
+    [read,
+     WmiDataId(1),
+     WmiScale(0),
+     Description("Total Character Transfers")]
+     uint32 TotalTransfers;
+ 
+// Property: Total Read Requests
+    [read,
+     WmiDataId(2),
+	 Description("Total Read Requests") ]
+     uint32 TotalReads;       
+ 
+// Property: Total Write Requests
+    [read,
+     WmiDataId(3),
+     Description("Total Write Requests") ]
+     uint32 TotalWrites;
+};

@@ -1,0 +1,86 @@
+ Loopback
+
+ Timestamp is 39b3c894 (Mon Sep 04 11:06:44 2000)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000009ccH .text                   CODE
+ 0002:00000000 0000004cH .idata$5                DATA
+ 0002:0000004c 00000071H .rdata                  DATA
+ 0003:00000000 00000014H .idata$2                CODE
+ 0003:00000014 00000014H .idata$3                CODE
+ 0003:00000028 0000004cH .idata$4                CODE
+ 0003:00000074 000001b0H .idata$6                CODE
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       ?DriverEntry@@YGJPAU_DRIVER_OBJECT@@PAU_UNICODE_STRING@@@Z 00011000 f   Driver.obj
+ 0001:00000490       ?Init@CUString@@QAEXXZ     00011490 f   Unicode.obj
+ 0001:000004c0       ??0CUString@@QAE@PBD@Z     000114c0 f   Unicode.obj
+ 0001:00000591       ??0CUString@@QAE@PBG@Z     00011591 f   Unicode.obj
+ 0001:000005b9       ??1CUString@@QAE@XZ        000115b9 f   Unicode.obj
+ 0001:000005cc       ?Free@CUString@@QAEXXZ     000115cc f   Unicode.obj
+ 0001:00000611       ??0CUString@@QAE@ABV0@@Z   00011611 f   Unicode.obj
+ 0001:00000685       ??4CUString@@QAE?AV0@ABV0@@Z 00011685 f   Unicode.obj
+ 0001:00000758       ??8CUString@@QBEEABV0@@Z   00011758 f   Unicode.obj
+ 0001:00000775       ??BCUString@@QBEPAGXZ      00011775 f   Unicode.obj
+ 0001:00000786       ??BCUString@@QAEAAU_UNICODE_STRING@@XZ 00011786 f   Unicode.obj
+ 0001:00000794       ??HCUString@@QBE?AV0@ABV0@@Z 00011794 f   Unicode.obj
+ 0001:00000855       ??YCUString@@QAEAAV0@ABV0@@Z 00011855 f   Unicode.obj
+ 0001:00000894       ??BCUString@@QBEKXZ        00011894 f   Unicode.obj
+ 0001:000008b4       ??0CUString@@QAE@K@Z       000118b4 f   Unicode.obj
+ 0001:0000090c       ??ACUString@@QAEAAGH@Z     0001190c f   Unicode.obj
+ 0001:00000950       ??0CUString@@QAE@XZ        00011950 f i Unicode.obj
+ 0001:00000966       _IoDeleteDevice@4          00011966 f   ntoskrnl:ntoskrnl.exe
+ 0001:0000096c       _IoCreateSymbolicLink@8    0001196c f   ntoskrnl:ntoskrnl.exe
+ 0001:00000972       _IoCreateDevice@28         00011972 f   ntoskrnl:ntoskrnl.exe
+ 0001:00000978       _IoDeleteSymbolicLink@4    00011978 f   ntoskrnl:ntoskrnl.exe
+ 0001:0000097e       _ExFreePool@4              0001197e f   ntoskrnl:ntoskrnl.exe
+ 0001:00000984       @IofCompleteRequest@8      00011984 f   ntoskrnl:ntoskrnl.exe
+ 0001:0000098a       _memcpy                    0001198a f   ntoskrnl:ntoskrnl.exe
+ 0001:00000990       _ExAllocatePoolWithTag@12  00011990 f   ntoskrnl:ntoskrnl.exe
+ 0001:00000996       _RtlAnsiStringToUnicodeString@12 00011996 f   ntoskrnl:ntoskrnl.exe
+ 0001:0000099c       _RtlxAnsiStringToUnicodeSize@4 0001199c f   ntoskrnl:ntoskrnl.exe
+ 0001:000009a2       _RtlInitAnsiString@8       000119a2 f   ntoskrnl:ntoskrnl.exe
+ 0001:000009a8       _RtlInitUnicodeString@8    000119a8 f   ntoskrnl:ntoskrnl.exe
+ 0001:000009ae       _RtlCopyUnicodeString@8    000119ae f   ntoskrnl:ntoskrnl.exe
+ 0001:000009b4       _RtlEqualUnicodeString@12  000119b4 f   ntoskrnl:ntoskrnl.exe
+ 0001:000009ba       _RtlAppendUnicodeStringToString@8 000119ba f   ntoskrnl:ntoskrnl.exe
+ 0001:000009c0       _RtlUnicodeStringToInteger@12 000119c0 f   ntoskrnl:ntoskrnl.exe
+ 0001:000009c6       _RtlIntegerToUnicodeString@12 000119c6 f   ntoskrnl:ntoskrnl.exe
+ 0002:00000000       __imp__RtlxAnsiStringToUnicodeSize@4 00012000     ntoskrnl:ntoskrnl.exe
+ 0002:00000004       __imp__IoCreateSymbolicLink@8 00012004     ntoskrnl:ntoskrnl.exe
+ 0002:00000008       __imp__IoCreateDevice@28   00012008     ntoskrnl:ntoskrnl.exe
+ 0002:0000000c       __imp__IoDeleteSymbolicLink@4 0001200c     ntoskrnl:ntoskrnl.exe
+ 0002:00000010       __imp__ExFreePool@4        00012010     ntoskrnl:ntoskrnl.exe
+ 0002:00000014       __imp_@IofCompleteRequest@8 00012014     ntoskrnl:ntoskrnl.exe
+ 0002:00000018       __imp__memcpy              00012018     ntoskrnl:ntoskrnl.exe
+ 0002:0000001c       __imp__ExAllocatePoolWithTag@12 0001201c     ntoskrnl:ntoskrnl.exe
+ 0002:00000020       __imp__RtlAnsiStringToUnicodeString@12 00012020     ntoskrnl:ntoskrnl.exe
+ 0002:00000024       __imp__IoDeleteDevice@4    00012024     ntoskrnl:ntoskrnl.exe
+ 0002:00000028       _NlsMbCodePageTag          00012028     ntoskrnl:ntoskrnl.exe
+ 0002:00000028       __imp__NlsMbCodePageTag    00012028     ntoskrnl:ntoskrnl.exe
+ 0002:0000002c       __imp__RtlInitAnsiString@8 0001202c     ntoskrnl:ntoskrnl.exe
+ 0002:00000030       __imp__RtlInitUnicodeString@8 00012030     ntoskrnl:ntoskrnl.exe
+ 0002:00000034       __imp__RtlCopyUnicodeString@8 00012034     ntoskrnl:ntoskrnl.exe
+ 0002:00000038       __imp__RtlEqualUnicodeString@12 00012038     ntoskrnl:ntoskrnl.exe
+ 0002:0000003c       __imp__RtlAppendUnicodeStringToString@8 0001203c     ntoskrnl:ntoskrnl.exe
+ 0002:00000040       __imp__RtlUnicodeStringToInteger@12 00012040     ntoskrnl:ntoskrnl.exe
+ 0002:00000044       __imp__RtlIntegerToUnicodeString@12 00012044     ntoskrnl:ntoskrnl.exe
+ 0002:00000048       \177ntoskrnl_NULL_THUNK_DATA 00012048     ntoskrnl:ntoskrnl.exe
+ 0002:000000a4       ??_C@_07CEIJ@?2?$DP?$DP?2LBK?$AA@ 000120a4     Driver.obj
+ 0002:000000ac       ??_C@_0BB@OABK@?2Device?2LOOPBACK?$AA@ 000120ac     Driver.obj
+ 0003:00000000       __IMPORT_DESCRIPTOR_ntoskrnl 00013000     ntoskrnl:ntoskrnl.exe
+ 0003:00000014       __NULL_IMPORT_DESCRIPTOR   00013014     ntoskrnl:ntoskrnl.exe
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00000058       ?CreateDevice@@YGJPAU_DRIVER_OBJECT@@K@Z 00011058 f   Driver.obj
+ 0001:000001f6       ?DriverUnload@@YGXPAU_DRIVER_OBJECT@@@Z 000111f6 f   Driver.obj
+ 0001:0000027b       ?DispatchCreate@@YGJPAU_DEVICE_OBJECT@@PAU_IRP@@@Z 0001127b f   Driver.obj
+ 0001:000002a3       ?DispatchClose@@YGJPAU_DEVICE_OBJECT@@PAU_IRP@@@Z 000112a3 f   Driver.obj
+ 0001:00000301       ?DispatchWrite@@YGJPAU_DEVICE_OBJECT@@PAU_IRP@@@Z 00011301 f   Driver.obj
+ 0001:000003d2       ?DispatchRead@@YGJPAU_DEVICE_OBJECT@@PAU_IRP@@@Z 000113d2 f   Driver.obj

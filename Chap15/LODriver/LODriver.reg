@@ -1,0 +1,14 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LODRIVER]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"DisplayName"="Chapter 15 Low Driver"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E978-E325-11CE-BFC1-08002BE10318}]
+"UpperFilters"="LODRIVER"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\System\LODRIVER]
+"EventMessageFile"="%SystemRoot%\\System32\\IOLOGMSG.DLL;%SystemRoot%\\System32\\Drivers\\LODriver.SYS"
+"TypesSupported"=dword:00000007

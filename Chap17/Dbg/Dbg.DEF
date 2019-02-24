@@ -1,0 +1,8 @@
+LIBRARY DBG
+
+EXPORTS
+	WinDbgExtensionDllInit
+	CheckVersion
+	ExtensionApiVersion
+	devext
+	printargs

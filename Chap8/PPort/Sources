@@ -1,0 +1,7 @@
+TARGETNAME=PPort
+TARGETTYPE=DRIVER
+
+TARGETPATH=.
+INCLUDES= $(BASEDIR)\inc;.
+
+SOURCES=driver.cpp unicode.cpp

@@ -1,0 +1,7 @@
+TARGETNAME=DMASlave
+TARGETTYPE=DRIVER
+
+TARGETPATH=.
+INCLUDES= $(BASEDIR)\inc;.
+
+SOURCES=driver.cpp unicode.cpp

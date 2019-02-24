@@ -1,0 +1,7 @@
+TARGETNAME=ThreadDMA
+TARGETTYPE=DRIVER
+
+TARGETPATH=.
+INCLUDES= $(BASEDIR)\inc;.
+
+SOURCES=driver.cpp transfer.cpp unicode.cpp eventlog.cpp Msg.rc

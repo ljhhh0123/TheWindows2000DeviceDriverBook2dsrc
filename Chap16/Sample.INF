@@ -1,0 +1,55 @@
+[Version]
+Signature="$Windows NT$"
+Class=Missiles
+ClassGUID={C9B3D080-6889-11d4-93FC-444553540000}
+Provider=W2KDriverBook
+DriverVer=07/04/2000,1.00.2468.1
+ 
+; Comments follow a semicolon
+ 
+[DestinationDirs] ; Specify where files are copied to
+DefaultDestDir=12 ; %windir%\system32\drivers
+CopyLaunchHelp=18 ; standard help directory
+ 
+[Manufacturer]
+W2KDriverBook=MyMfgName	; call out a model section
+
+[MyMfgName]  ; begin a Models section 
+; Our list of devices follows:
+"ISA Missile Launcher"=InstallLauncher,ISA\Launcher
+ 
+[InstallLauncher]	; begin a DDInstall section
+CopyFiles=CopyLaunchFiles ; call out a CopyFiles sec.
+CopyFiles=CopyLaunchHelp	; and one for the help files
+AddReg=LaunchRegSection	; call out an AddReg section
+
+[CopyLaunchFiles]	; begin a CopyFiles section
+Launcher.sys
+
+[CopyLaunchHelp]	; a second CopyFiles for Help file
+Launcher.hlp
+
+[LaunchRegSection]	; begin an AddReg section
+; Provide a DWORD registry value of 0 for our device:
+HKR,"Parameters","Coordinates",FLG_ADDREG_TYPE_DWORD,0
+
+[SourceDisksNames]
+; This section is not really required because we have
+; only two files and they probably fit on one disk.
+1="Missile Launcher Driver Files"
+
+[SourceDisksFiles]
+; Similarly, since everything came from one disk,
+; we don't really need this section either.
+Launcher.sys=1
+Launcher.hlp=1
+
+[InstallLauncher.Services] ; DDInstall.Services sec.
+AddService=Launcher,2,LaunchService
+
+; Setup the SCM registry entries so driver can start
+[LaunchService]
+ServiceType=1		; driver
+StartType=3		; on-demand (manual)
+ErrorControl=1		; report errors
+ServiceBinary=%12%\Launcher.sys	; path to driver

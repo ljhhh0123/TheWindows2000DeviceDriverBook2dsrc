@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MINPNP]
+"Start"=dword:3
+"Type"=dword:1
+"ErrorControl"=dword:1
+"DisplayName"="Chapter 9 Minimal PnP Driver"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E978-E325-11CE-BFC1-08002BE10318}]
+"UpperFilters"="MINPNP"

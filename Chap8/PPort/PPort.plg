@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PPort - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.H1\LOCALS~1\Temp\RSP247.tmp" with contents
+[
+/nologo /Gz /ML /W3 /Gm /Gi /Zi /Od /I "D:\NTDDK\inc\ddk" /I "D:\NTDDK\inc" /D "_DEBUG" /D "_X86_" /D _WIN32_WINNT=0x500 /D DBG=1 /FR"Debug/" /Fp"Debug/PPort.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /Gs -GF /c 
+"F:\backup\book\电子图书\WINDOW书籍\W2KWDM\windows2000设备驱动程序设计指南（配套光盘）\Chap8\PPort\Driver.cpp"
+"F:\backup\book\电子图书\WINDOW书籍\W2KWDM\windows2000设备驱动程序设计指南（配套光盘）\Chap8\PPort\Unicode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.H1\LOCALS~1\Temp\RSP247.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.H1\LOCALS~1\Temp\RSP248.tmp" with contents
+[
+int64.lib ntoskrnl.lib hal.lib /nologo /base:"0x10000" /entry:"DriverEntry" /incremental:no /pdb:"Debug/PPort.pdb" /map:"Debug/PPort.map" /debug /machine:I386 /nodefaultlib /out:"Debug\PPort.SYS" /libpath:"D:\NTDDK\libchk\i386" -driver -subsystem:NATIVE,4.00 
+".\Debug\Driver.obj"
+".\Debug\Unicode.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.H1\LOCALS~1\Temp\RSP248.tmp"
+<h3>Output Window</h3>
+Compiling...
+Driver.cpp
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2146: syntax error : missing ';' before identifier 'Lock'
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2501: 'PULONG_PTR' : missing storage-class or type specifiers
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2501: 'Lock' : missing storage-class or type specifiers
+G:\NTDDK\INC\DDK\NTDDK.h(824) : error C2146: syntax error : missing ';' before identifier 'KSPIN_LOCK'
+G:\NTDDK\INC\DDK\NTDDK.h(824) : fatal error C1004: unexpected end of file found
+Unicode.cpp
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2146: syntax error : missing ';' before identifier 'Lock'
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2501: 'PULONG_PTR' : missing storage-class or type specifiers
+G:\NTDDK\INC\DDK\NTDDK.h(370) : error C2501: 'Lock' : missing storage-class or type specifiers
+G:\NTDDK\INC\DDK\NTDDK.h(824) : error C2146: syntax error : missing ';' before identifier 'KSPIN_LOCK'
+G:\NTDDK\INC\DDK\NTDDK.h(824) : fatal error C1004: unexpected end of file found
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+PPort.SYS - 10 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
